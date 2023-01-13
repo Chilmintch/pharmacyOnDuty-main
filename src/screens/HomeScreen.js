@@ -51,9 +51,10 @@ function App({ navigation }) {
     </TouchableHighlight>
   );
   return (
-    <SafeAreaView style={{ alignItems: "center" }}>
+    <SafeAreaView style={{ alignItems: "center",paddingHorizontal: 8, marginBottom : 60 }}>
       <CustomInput value={ilce} onChangeText={setIlce} />
       <FlatList
+      showsVerticalScrollIndicator={false}
         data={pharmacies.filter((x) =>
           x.ilce.toLowerCase().includes(ilce.toLowerCase())
         )}

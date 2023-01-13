@@ -8,7 +8,7 @@ const CustomInput = ({ value, onChangeText }) => {
       label="Eczane Ara"
       value={value}
       onChangeText={onChangeText}
-      style={{ width: "95%" }}
+      style={{ width: "95%",marginBottom : 15 }}
     />
   );
 };

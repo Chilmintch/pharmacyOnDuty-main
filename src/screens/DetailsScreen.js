@@ -33,6 +33,7 @@ const DetailsScreen = ({ route, navigation }) => {
           <CustomButton
             title={"Ara"}
             onPress={() => Linking.openURL(`tel:${param.item.Telefon}`)}
+            name={`phone-outline`}
           />
           <CustomButton
             title={"Konum"}
@@ -44,6 +45,8 @@ const DetailsScreen = ({ route, navigation }) => {
                   param.item.longitude
               )
             }
+            name={`map-outline`}
+
           />
           <CustomButton
             title={"Yol Tarifi"}
@@ -55,6 +58,8 @@ const DetailsScreen = ({ route, navigation }) => {
                   param.item.longitude
               )
             }
+            name={`map-marker-path`}
+
           />
       </Card>
     </SafeAreaView>
