@@ -11,7 +11,7 @@ function App({ navigation }) {
 
   useEffect(() => {
     fetchData();
-  });
+  },[]);
 
   async function fetchData() {
     var data = null;
